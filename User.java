@@ -40,14 +40,12 @@ public class User{
         return "name: " + this.name  +", Dob " + this.dob;
     }
 
-    // เช็คว่าวันนี้เป็นวันเกิดของ user หรือไม่
     public boolean isBirthday() {
         LocalDate today = LocalDate.now();
         return today.getMonthValue() == dob.getMonthValue()
             && today.getDayOfMonth() == dob.getDayOfMonth();
     }
 
-    // ส่งข้อความทักทายวันเกิด
     public String getBirthdayGreeting() {
         if (isBirthday()) {
             return "Happy birthday " + this.name + "!";

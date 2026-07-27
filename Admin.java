@@ -24,12 +24,10 @@ public class Admin extends User {
         }
     }
 
-    // คำนวณอายุของ admin ในหน่วยปี
     public int getAge() {
         return LocalDate.now().getYear() - dob.getYear();
     }
 
-    // แก้ไขข้อความทักทายวันเกิดสำหรับ admin
     @Override
     public String getBirthdayGreeting() {
         String baseMessage = super.getBirthdayGreeting();

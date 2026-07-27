@@ -12,14 +12,14 @@ public class Admin extends User {
 
     @Override
     public String getInfo() {
-        return super.getInfo() + " | User type: admin";
+        return super.getInfo() + " | user type: admin";
     }
 
     public String getInfo(boolean full) {
         if (full) {
             return this.getInfo() + " " + LocalDate.now();
         } else {
-            return "Name: " + this.name;
+            return "name: " + this.name;
 
         }
     }
@@ -32,7 +32,7 @@ public class Admin extends User {
     public String getBirthdayGreeting() {
         String baseMessage = super.getBirthdayGreeting();
         if (isBirthday()) {
-            return baseMessage + " You are " + getAge() + " years old!";
+            return baseMessage + " you are " + getAge() + " years old!";
         } else {
             return baseMessage;
         }

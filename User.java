@@ -37,7 +37,7 @@ public class User{
     }
 
     public String getInfo(){
-        return "name: " + this.name  +", Dob " + this.dob;
+        return "name: " + this.name  +", dob " + this.dob;
     }
 
     public boolean isBirthday() {
@@ -48,9 +48,9 @@ public class User{
 
     public String getBirthdayGreeting() {
         if (isBirthday()) {
-            return "Happy birthday " + this.name + "!";
+            return "happy birthday " + this.name + "!";
         } else {
-            return "It is not " + this.name + "'s birthday today.";
+            return "it is not " + this.name + "'s birthday today.";
         }
     }
 }

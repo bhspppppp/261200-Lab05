@@ -6,8 +6,8 @@ public class Lab05 {
         int todayMonth = LocalDate.now().getMonthValue();
         int todayDay = LocalDate.now().getDayOfMonth();
 
-        User user1 = new User("Alice", todayYear - 25, todayMonth, todayDay);
-        Admin admin1 = new Admin("Nicolas", todayYear - 62, todayMonth, todayDay);
+        User user1 = new User("alice", todayYear - 25, todayMonth, todayDay);
+        Admin admin1 = new Admin("nicolas", todayYear - 62, todayMonth, todayDay);
 
         System.out.println(user1.getBirthdayGreeting());
         System.out.println(admin1.getBirthdayGreeting());
